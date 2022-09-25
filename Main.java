@@ -4,7 +4,7 @@ import java.awt.*;
 class Main {
 	//set your size here
 	public static final int CANVAS_WIDTH = 500;
-	public static final int CANVAS_HEIGHT = 400;
+	public static final int CANVAS_HEIGHT = 500;
 
   public static void main(String[] args) {
 		JFrame frame = new JFrame("My Program");
