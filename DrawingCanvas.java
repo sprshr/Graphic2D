@@ -49,18 +49,18 @@ public class DrawingCanvas extends JComponent{
 		g.drawArc(223, 280, 20, 20, 180, 185);
 		g.drawArc(243, 280, 20, 20, 180, 185);
 		g.drawLine(223, 290, 238, 250);
-		// mouth
-		//g.drawArc(180, 330, 20, 20, 180, 185);
-		//g.drawArc(200, 330, 20, 20, 5, 180);
 		int xValue = 175;
 		int startAngle = 180;
 		int arcAngle = 180;
 		while(xValue <= 275){
 			g.drawArc(xValue += 10, 340, 10, 10, startAngle, arcAngle);
+			// alternates between 5-180 and 185-180
 			startAngle = Math.abs(startAngle - 185);
 			arcAngle = Math.abs(arcAngle - 365);
-			
 		}
-	}
-
+		// signature
+		g.setColor(Color.darkGray);
+		g.setFont(new Font("Ink Free", Font.PLAIN, 22));
+		g.drawString("Sepehr Sahraian", 320, 480);
+}
 }
