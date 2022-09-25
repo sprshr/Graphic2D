@@ -37,12 +37,12 @@ public class DrawingCanvas extends JComponent{
 		// right eyebrow
 		g.setStroke(new BasicStroke(3));
 		g.setColor(Color.black);
-		for (int Xvalue = 275; Xvalue <= 325; Xvalue += 5) {
-			g.drawArc(Xvalue, 185, 70, 20, 175, 25);
+		for (int xValue = 275; xValue <= 325; xValue += 5) {
+			g.drawArc(xValue, 185, 70, 20, 175, 25);
 		}
 		// left eye brow
-		for (int Xvalue = 145; Xvalue <= 200; Xvalue += 5) {
-			g.drawArc(Xvalue, 185, 70, 20, 175, 25);
+		for (int xValue = 145; xValue <= 200; xValue += 5) {
+			g.drawArc(xValue, 185, 70, 20, 175, 25);
 		}
 		// nose
 		g.setStroke(new BasicStroke(2));
